@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+    <head> 
+        <title>Justine Coneybeer's Portfolio</title>
+        <!--This links in the CSS code with the HTML-->
+        <link href="./style.css" type="text/css" rel="stylesheet">
+        <!--This allows for the 'hamburger' icon to be seen in mobile view-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width,user-scalable=no">
+    </head>
+    <body>
+        <header>
+        <!--MENU-->
+            <nav class="topnav" id="portfoliotopnav">
+                <a href="#about">About</a>
+                <a href="#skills"> Skills </a> 
+                <a href="#accomplishments"> Accomplishments</a> 
+                <a href="#contact"> Contact</a> 
+                <a href="javascript:void(0);" class="icon" 
+                onclick="openMenu()"><i class="fa fa-bars"></i></a>
+            </nav>
+            <h1>Justine Coneybeer</h1>
+            </header>
+    <main>
+        <!--PROFILE PIC-->
+            <figure >
+            <a href=https://www.linkedin.com/in/justine-coneybeer-a33126110/" target="_blank"> <img src="profile photo.jpeg" width="200" height ="200" alt="Justine Coneybeer profile picture"/> </a>
+            </figure>
+        <!--About Section-->
+            <div id="aboutsection">
+                <article>
+                    <h2 id="about">About </h2>
+                </article>
+                <body>
+                    <p>I am a researcher at the <strong>Queensland Univeristy of Technology</strong> and have a particular interest in human rights in the fashion system, the Australian Modern Slavery Act, investor activism for environmental and social justice, and the circular economy. <br>
+                        I am passionate about my work and dedicated to finding solutions for the world's injustices.</p>
+                    <div id="skillssection" class="list"> 
+                    <!--Skills Section-->
+                        <h2 id="skills">Skills</h2> 
+                            <h4> Research Skills</h4>
+                            <ul>
+                                <li>Report Writing</li>
+                                <li>Data collection</li>
+                                <li>Project Administration</li>
+                            </ul>
+                            <h4>Interpersonal Skills</h4>
+                            <ul>
+                                <li>Clear communication </li>
+                                <li>Teamwork</li>
+                                <li>Responsibility</li>
+                            </ul>
+                            <h4>Technical Skills</h4>
+                            <ul>
+                                <li>NViVo</li>
+                                <li>EndNote</li>
+                                <li>Evernote</li>
+                                <li>More skills pending! </li>
+                            </ul>
+                    </div>
+                </body>
+            </div> 
+        <!--Accomplishments Section-->
+            <div id="accomplishmentssection"></div>
+                <article>
+                    <h2 id="accomplishments">Accomplishments</h2>
+                </article>
+                <body>
+                    <table class="center">
+                    <tr>
+                          <th scope ="col"><strong>Publications</strong></th>
+                          <th scope ="col"><Strong>Awards</Strong></th>
+                          <th scope ="col"><strong>Presentations</strong></th>
+                    </tr>
+                    <tr>
+                        <td>Take the profit out of slavery by holding companies to account for human rights abuses. <br> <br>Published in <a href="https://thenewdaily.com.au/news/national/2020/11/21/modern-slavery-australia-rights/" target="blank">The New Daily</a>
+                            </td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>What COVID-19 means for the people making your clothes. <br> <br>Published in <a href="https://theconversation.com/what-covid-19-means-for-the-people-making-your-clothes-134800" target="_blank">The Conversation</a></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    </table>
+            
+                </body>
+            </div>
+        <!--Contact Section-->
+            <div id=contactsection>
+                <h2 id="contact" class="contactform">Contact</h2>
+                <p>
+                <a href="https://www.linkedin.com/in/justine-coneybeer-a33126110/" target="_blank">LinkedIn</a>
+                </p>
+                <br>
+                <form>
+                    <label for="name">Name*:</label>
+                    <br>    
+                    <input type="text" name="name" id="name" required>
+                    <br>
+                    <br>
+                    <label for="email">Email*:</label>
+                    <br>
+                    <input type="text" name="email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                    <br>
+                    <br>
+                    <label for="phone">Phone:</label>
+                    <br>
+                    <input type="number" name="phone" id="phone" pattern="[0-9]">
+                    <br>
+                    <br>
+                    <label for="message">Write your message below*:</label>
+                    <br> 
+                    <textarea id="message" name="message" rows="5" cols="30" required></textarea>
+                    <br>
+                    <br>
+                    <input type="submit"> 
+                </form>
+            </div>
+        </main>
+       <!--CONNECTION TO JAVASCRIPT--> 
+        <script src="./nav.js"></script>
+    </body>
+</html>
